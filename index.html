@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/paper/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <script src="/js/Main.js"></script>
+    <title>Github Issues</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/javascript">
+      // Embed Elm code
+      var rootDiv = document.getElementById("root");
+      var issues = Elm.embed(Elm.Main, rootDiv, {initialPath: window.location.pathname});
+      // var elmApp = Elm.fullscreen(Elm.Main, {initialPath: window.location.pathname});
+    </script>
+
+  </body>
+</html>
