@@ -4,6 +4,7 @@ import Html exposing (..)
 import Html.Attributes exposing (..)
 import Signal exposing (..)
 import TransitRouter
+import TransitStyle
 import RoutedModel exposing (..)
 import Routes exposing (..)
 import CorePage.IssuesPageView exposing (..)
@@ -26,7 +27,7 @@ view address model =
         ]
       , div
           [ class "content"
-          -- , style (TransitStyle.fadeSlideLeft 100 (TransitRouter.getTransition model))
+          , style (TransitStyle.fadeSlideLeft 100 (TransitRouter.getTransition model))
           ]
           [ case (TransitRouter.getRoute model) of
               Home ->
